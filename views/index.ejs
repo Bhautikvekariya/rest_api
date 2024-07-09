@@ -12,7 +12,13 @@
          <div class="post">
             <h4 class="user">@<%=post.username%></h4>
             <h3 class="content"><%=post.content%></h3>
+
+            <a href="http://localhost:8080/posts/<%=post.id%>">see in detail</a>
+            <a href="http://localhost:8080/posts/<%=post.id%>/Edit">Edit </a>
          </div>
     <%}%>
+
+    <br>
+    <a href="http://localhost:8080/posts/new">create new posts</a>
 </body>
 </html>
